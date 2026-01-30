@@ -27,6 +27,274 @@
         };
     };
 
+    behaviors {
+        td6: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp NUMBER_6>, <&kp RS(NUMBER_6)>;
+        };
+
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1>, <&kp RS(NUMBER_1)>;
+        };
+
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_2>, <&kp RS(NUMBER_2)>;
+        };
+
+        Clicks: Clicks {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CLICKS";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&mkp RCLK>;
+        };
+
+        td3: td3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD3";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_3>, <&kp RS(NUMBER_3)>;
+        };
+
+        td4: td4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD4";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_4>, <&kp RS(NUMBER_4)>;
+        };
+
+        td5: td5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD5";
+            #binding-cells = <0>;
+            bindings = <&kp N5>, <&kp RS(N5)>;
+        };
+
+        td7: td7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD7";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp RS(N7)>;
+        };
+
+        td8: td8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD8";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp RS(N8)>;
+        };
+
+        td9: td9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD9";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp RS(N9)>;
+        };
+
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD0";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp RS(N0)>;
+        };
+
+        tdQuest: tdQuest {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDQUEST";
+            #binding-cells = <0>;
+            bindings = <&kp RS(MINUS)>, <&kp MINUS>;
+        };
+
+        tdDot: tdDot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDDOT";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp RS(DOT)>;
+        };
+
+        tdmouse: tdmouse {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "TDMOUSE";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+
+        Arrova: Arrova {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ARROVA";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp RA(Q)>;
+        };
+
+        spaceEnter: spaceEnter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SPACEENTER";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
+        };
+
+        coma: coma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COMA";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp RS(COMMA)>;
+        };
+
+        vocala: vocala {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALA";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp LEFT_BRACKET>;
+        };
+
+        vocale: vocale {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALE";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp LEFT_BRACKET>;
+        };
+
+        vocalu: vocalu {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALU";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp LEFT_BRACKET>;
+        };
+
+        vocali: vocali {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALI";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp LEFT_BRACKET>;
+        };
+
+        vocalo: vocalo {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOCALO";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp LEFT_BRACKET>;
+        };
+
+        pregunta: pregunta {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PREGUNTA";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+        };
+
+        tapend: tapend {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPEND";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp END>;
+        };
+
+        taphome: taphome {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPHOME";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ARROW>, <&kp HOME>;
+        };
+
+        tapp: tapp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPP";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp RIGHT_BRACKET>;
+        };
+
+        tdGuion: tdGuion {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDGUION";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp RS(FSLH)>;
+        };
+    };
+
+    macros {
+        Empleado: Empleado {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N1 &kp N1 &kp N3 &kp N3 &kp N3 &kp N5>;
+            label = "EMPLEADO";
+        };
+
+        Password: Password {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N1 &kp N2 &kp N0 &kp N1 &kp N0 &kp N2 &kp N7 &kp N3 &kp DOT &kp LS(W) &kp E &kp L &kp L &kp LS(T) &kp LS(G) &kp LS(G) &kp LS(S) &kp N2 &kp NUMBER_9>;
+            label = "PASSWORD";
+        };
+
+        Password2: Password2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W) &kp E &kp L &kp L &kp N &kp E &kp V &kp E &kp R &kp D &kp I &kp E>;
+            label = "PASSWORD2";
+        };
+
+        gitadd: gitadd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp A &kp D &kp D &kp SPACE>;
+            label = "GITADD";
+        };
+
+        gitstatus: gitstatus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp S &kp T &kp A &kp T &kp U &kp S &kp RET>;
+            label = "GITSTATUS";
+        };
+
+        gitcommit: gitcommit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp O &kp M &kp M &kp I &kp T &kp SPACE &kp MINUS &kp M &kp SPACE>;
+            label = "GITCOMMIT";
+        };
+
+        gitpull: gitpull {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp L &kp L>;
+            label = "GITPULL";
+        };
+
+        gitpush: gitpush {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H>;
+            label = "GITPUSH";
+        };
+
+        gitlog: gitlog {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp L &kp O &kp G &kp SPACE &kp MINUS &kp MINUS &kp O &kp N &kp E &kp L &kp I &kp N &kp E>;
+            label = "GITLOG";
+        };
+
+        gitbranch: gitbranch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp B &kp R &kp A &kp N &kp C &kp H &kp SPACE &kp MINUS &kp MINUS &kp A &kp L &kp L>;
+            label = "GITBRANCH";
+        };
+
+        gitcheck: gitcheck {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp C &kp H &kp E &kp C &kp K &kp O &kp U &kp T &kp SPACE>;
+            label = "GITCHECK";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
