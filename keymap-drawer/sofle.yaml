@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '&td1', '&td2', '&td3', '&td4', '&td5', '&td6', '&td7', '&td8', '&td9', '&td0', DELETE, ESC, Q, W, '&vocale', R, T, Y, '&vocalu', '&vocali', '&vocalo',
-    P, BSPC, TAB, '&vocala', S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, MUTE, adjust, N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, SPACE, lower, raise,
-    ENTER, RCTRL, RALT, RGUI]
+  default: [BT CLR ALL, '&td1', '&td2', '&td3', '&td4', '&td5', '&td6', '&td7', '&td8', '&td9', '&td0', DELETE, ESC, Q, W, '&vocale', R, T, Y, '&vocalu', '&vocali',
+    '&vocalo', P, BSPC, TAB, '&vocala', S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, MUTE, adjust, N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, SPACE, lower,
+    raise, ENTER, RCTRL, RALT, RGUI]
   lower:
   - '&studio_unlock'
   - F1
